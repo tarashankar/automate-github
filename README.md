@@ -12,6 +12,9 @@ It perform the following actions:-
 6. Inserting some new text into newly created file (ui automation) and validate.
 7. Delete the created repository and validate.
 
+The main class is TestClass
+
+TestNG.jar is required to be added in your project.
 
 If you also want to delete the clone reository:-
 just add these lines in the sh file
