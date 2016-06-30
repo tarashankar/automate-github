@@ -14,6 +14,9 @@ It perform the following actions:-
 
 The main class is TestClass
 
+Edit the .sh file by your username and password.
+Also in the every class just replace username and password with your own
+
 TestNG.jar is required to be added in your project.
 
 If you also want to delete the clone reository:-
