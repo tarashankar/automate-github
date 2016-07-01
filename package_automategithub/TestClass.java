@@ -80,11 +80,20 @@ public class TestClass {
 	}
 	
 	@AfterClass
-	public void Delete_Existing_Repo() throws InterruptedException
+	public void Delete_Existing_Repo()  
 	{
 		DeleteRepo delrepo = PageFactory.initElements(driver, DeleteRepo.class);
-		delrepo.deleteRepo();
-		Thread.sleep(3000);
+		try {
+			
+			delrepo.deleteRepo();
+			Thread.sleep(3000);
+			driver.switchTo().alert().accept();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.navigate().refresh();
 		Assert.assertEquals(driver.getTitle(), "GitHub");
 		Reporter.log("Assert passed: Repository has been deleted",true);		
 	}
