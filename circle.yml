@@ -8,7 +8,7 @@ general:
     - master
 test:
   override:
-- package_automategithub TestClass.java
+    - package_automategithub TestClass.java
 
 test:
   post:
