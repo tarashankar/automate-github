@@ -6,8 +6,3 @@ general:
 test:
   override:
     -  automate-github/package_automategithub/TestClass.java
-
-test:
-  post:
-    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
-    - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
