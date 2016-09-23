@@ -3,7 +3,7 @@
 
          <test name="github automation in xml" preserve-order="true">
 			<classes>
-				<class name="package_automategithub.TestClass.java" />
+				<class name="package_automategithub.TestClass" />
 				
 			</classes>
 		</test>
