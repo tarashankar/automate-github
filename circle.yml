@@ -5,7 +5,7 @@ general:
     - master
 test:
   override:
-    - package_automategithub TestClass.java
+    -  automate-github/package_automategithub/TestClass.java
 
 test:
   post:
