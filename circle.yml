@@ -5,4 +5,4 @@ general:
     - master
 test:
   override:
-    -  automate-github/package_automategithub/TestClass.java
+    -  package_automategithub/TestClass.java
