@@ -1,3 +1,14 @@
+dependencies:
+  pre:
+    - sudo rsync -r --include=*/ --include=*.jar --exclude=* .jdk-overlay/jre $JAVA_HOME
+
+general:
+  branches:
+    only:
+    - master
+test:
+  override:
+- package_automategithub TestClass.java
 
 test:
   post:
