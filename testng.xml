@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="github automate" preserve-order="true" >
+
+         <test name="github automation in xml" preserve-order="true">
+			<classes>
+				<class name="package_automategithub.TestClass.java" />
+				
+			</classes>
+		</test>
+		
+		
+</suite>
