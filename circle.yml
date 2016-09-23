@@ -1,8 +1,0 @@
-
-general:
-  branches:
-    only:
-    - master
-test:
-  override:
-    -  package_automategithub/TestClass.java
