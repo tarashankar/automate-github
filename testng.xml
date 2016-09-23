@@ -1,12 +1,8 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="github automate" preserve-order="true" >
-
-         <test name="github automation in xml" preserve-order="true">
-			<classes>
-				<class name="package_automategithub.TestClass" />
-				
-			</classes>
-		</test>
-		
-		
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNgMavenExampleSuite" parallel="false">
+  <test name="TestNgMavenTest">
+    <classes>
+      <class name="package_automategithub.TestClass"/>
+    </classes>
+  </test>
 </suite>
